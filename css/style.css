@@ -384,6 +384,7 @@ span.review-stars-contt {
 }
 .pkg-pan-btn-contt {
     width: 45%;
+    margin: auto;
 }
 p.au-tt {background: #b3dbf1;padding: 10px;font-size: 0.8rem;text-align: center;}
 .rating-contt p {
@@ -402,6 +403,9 @@ p.au-tt {background: #b3dbf1;padding: 10px;font-size: 0.8rem;text-align: center;
     body{
         font-size: 75%;
     }
+    .pkg-pan-btn-contt {
+        margin: auto;
+    }
     header nav ul li {
         font-size: 0.5rem;
     }
@@ -410,11 +414,12 @@ p.au-tt {background: #b3dbf1;padding: 10px;font-size: 0.8rem;text-align: center;
     }
     .search-box-cont input[type="text"] {
         font-size: 0.5rem;
-        width: 80px;
+        width: 70px;
+        padding: 0px;
     }
     .search-box-cont input[type="submit"] {
         font-size: 0.5rem;
-        padding: 0px 5px;
+        /* padding: 0px 5px; */
     }
     .booking-panel h2 {
         font-size: 0.8rem;
@@ -634,6 +639,7 @@ span.review-stars-contt {
 }
 .pkg-pan-btn-contt {
     width: 45%;
+    margin: 0;
 }
 
 b.foot-tt {
