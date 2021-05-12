@@ -1,7 +1,7 @@
 body{
-	color: #000000;
-	box-sizing: border-box;
-	font-size: 62.5%;
+    color: #000000;
+    box-sizing: border-box;
+    font-size: 62.5%;
 }
 header nav ul {
     margin: 0;
@@ -99,9 +99,10 @@ h3.sec-tt {
 }
 
 .dummy-box {
-    width: 50px;
-    height: 50px;
-    background: #0a3c97;
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    padding: 5px;
 }
 
 .booking-panel ul li {
@@ -390,8 +391,15 @@ p.au-tt {background: #b3dbf1;padding: 10px;font-size: 0.8rem;text-align: center;
 .rating-contt p {
     font-size: 0.5rem;
 }
-
 .review-contt div p span {font-size: 0.6rem;}
+.cal-date {
+    font-size: 1rem;
+}
+
+.cal-month-year {
+    display: flex;
+    flex-direction: column;
+}
 /*MEDIA MEDIA MEDIA MEDIA MOBILE MOBILE RESPONSIVE RESPONSIVE*/
 @media only screen and (min-width: 360px){
     .other-prop-contt {
@@ -434,6 +442,11 @@ p.au-tt {background: #b3dbf1;padding: 10px;font-size: 0.8rem;text-align: center;
     .other-prop-contt {
         width: 240px;
         height: 150px;
+    }
+    .dummy-box {width: 70px;height: 70px;}
+
+    .cal-date {
+        font-size: 1.2rem;
     }
 }
 @media only screen and (min-width: 760px){
@@ -651,11 +664,17 @@ b.foot-tt {
 }
 
 .dummy-box {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
 }
 
 .booking-panel ul li div p {
+    font-size: 1rem;
+}
+.cal-date {
+    font-size: 2.5rem;
+}
+.cal-month-year{
     font-size: 1rem;
 }
 }
@@ -752,6 +771,13 @@ p.foot-sec-desc {
 span.foot-sec-desc {
     font-size: 1rem;
 }
+.cal-date {
+    font-size: 3rem;
+}
+
+.cal-month-year {
+    font-size: 1.5rem;
+}
 }
 
 @media only screen and (min-width: 1280px){
@@ -794,13 +820,24 @@ h3.sec-tt {
 
 .grid-panel ul li div {
     height: 220px;
-}	
+}   
 .review-contt div p span {
     font-size: 1rem;
 }
 
 .other-prop-contt p {
     font-size: 1rem;
+}
+.dummy-box {width: 200px;height: 200px;padding: 15px;}
+
+.cal-month-year {
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+.cal-date {
+    font-size: 5rem;
 }
 } 
 
@@ -846,7 +883,7 @@ p.foot-sec-desc {
 li.foot-social-icon {
     height: 50px;
     width: 50px;
-}	
+}   
 }
 @media only screen and (min-width: 1440px ){
 .party-banner {
@@ -884,7 +921,7 @@ img.au-sec3-carousel-img {
 
 h3.package-panel-st {
     font-size: 2em;
-}	
+}   
 }
 
 @media only screen and (min-width: 1920px){
