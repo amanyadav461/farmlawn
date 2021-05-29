@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body{
     color: #000000;
     box-sizing: border-box;
@@ -33,6 +36,11 @@ h3,h2,h1 {
     padding: 0;
     margin: 0;
 }
+a {
+    color: #234683;
+}
+
+
 .search-box-cont {
     align-self: center;
 }
@@ -52,11 +60,9 @@ h3,h2,h1 {
     border: 1px solid #0a3c97;
 }
 .banner-area {
-    background: url('../img/banner.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 3vh 0;
 }
 
 
@@ -88,7 +94,7 @@ h3.sec-tt {
     width: 90%;
     margin: 5vh auto;
     text-align: center;
-    background: #b3dbf1;
+    background: #e9f6fe;
     padding: 5vh 0;
     font-weight: bold;
 }
@@ -336,7 +342,7 @@ ul.au-sec4-desc-cont ol {
     position: relative;
     width: 170px;
     height: 115px;
-    background: #b3dbf1;
+    background: #e9f6fe;
     display: flex;
     flex-direction: column;
 }
@@ -387,7 +393,7 @@ span.review-stars-contt {
     width: 45%;
     margin: auto;
 }
-p.au-tt {background: #b3dbf1;padding: 10px;font-size: 0.8rem;text-align: center;}
+p.au-tt {background: #e9f6fe;padding: 10px;font-size: 0.8rem;text-align: center;}
 .rating-contt p {
     font-size: 0.5rem;
 }
@@ -399,6 +405,9 @@ p.au-tt {background: #b3dbf1;padding: 10px;font-size: 0.8rem;text-align: center;
 .cal-month-year {
     display: flex;
     flex-direction: column;
+}
+.banner-area img {
+    width: 100%;
 }
 /*MEDIA MEDIA MEDIA MEDIA MOBILE MOBILE RESPONSIVE RESPONSIVE*/
 @media only screen and (min-width: 360px){
@@ -418,7 +427,6 @@ p.au-tt {background: #b3dbf1;padding: 10px;font-size: 0.8rem;text-align: center;
         font-size: 0.5rem;
     }
     .banner-area {
-        padding: 4vh 0;
     }
     .search-box-cont input[type="text"] {
         font-size: 0.5rem;
@@ -558,7 +566,7 @@ h3.package-panel-st {
     margin-bottom: 20px;
     width: 45%;
 }
-p.au-tt {background: #b3dbf1;padding: 20px;font-size: 1.5em;text-align: center;}
+p.au-tt {background: #e9f6fe;padding: 20px;font-size: 1.5em;text-align: center;font-weight: 700;letter-spacing: 2px;}
 
 .mid-contt {
     width: 80%;
@@ -602,7 +610,7 @@ ul.au-sec4-desc-cont ol {
     position: relative;
     width: 250px;
     height: 200px;
-    background: #b3dbf1;
+    background: #e9f6fe;
     display: flex;
     flex-direction: column;
 }
@@ -626,6 +634,9 @@ ul.au-sec4-desc-cont ol {
     font-weight: bold;
     text-align: center;
     font-size: 1rem;
+    margin: 0;
+    padding: 1rem;
+    background: #e9f6fe;
 }
 
 .review-contt div p {
@@ -778,6 +789,9 @@ span.foot-sec-desc {
 .cal-month-year {
     font-size: 1.5rem;
 }
+p.au-tt{
+    font-size: 2em;
+}
 }
 
 @media only screen and (min-width: 1280px){
@@ -797,7 +811,6 @@ h3.banner-txt1 {
 h3.banner-txt2 {font-size: 2em;}
 
 .banner-area {
-    padding: 7vh;
 }
 
 img.sec2-carousel-img {
@@ -896,8 +909,14 @@ img.au-sec3-carousel-img {
     height: 375px;
 }
 }
-
 @media only screen and (min-width: 1600px){
+    body{
+        width: 1440px;
+        margin: auto;
+        background: #9fdff1;
+    }
+}
+/*@media only screen and (min-width: 1600px){
 img.sec2-carousel-img {
     width: 470px;
 }
@@ -933,4 +952,4 @@ body {
 img.au-sec3-carousel-img {
     height: 435px;
 }
-}
+}*/
