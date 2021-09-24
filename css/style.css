@@ -16,7 +16,7 @@ header nav ul {
 }
 
 header nav ul li {
-    margin: 0px 5px 0px 0px;
+    margin: 0px 10px 0px 0px;
     font-size: 0.4rem;
     font-weight: bold;
     padding: 10px 0px;
@@ -86,18 +86,20 @@ h3.banner-txt1 {
     font-size: 0.6rem;
 }
 
-h3.sec-tt {
+h3.sec-tt,p.au-tt {
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1.5em;
+    padding: 15px 5px;
+    background: #b3dbf1;
 }
 .booking-panel {
-    width: 90%;
+    width: 95%;
     margin: 5vh auto;
     text-align: center;
     background: #b3dbf1;
-    padding: 5vh 0;
+    padding: 2vh 0;
     font-weight: bold;
 }
 
@@ -107,8 +109,8 @@ h3.sec-tt {
 }
 
 .dummy-box {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     background: #ffffff;
     padding: 5px;
 }
@@ -118,13 +120,21 @@ h3.sec-tt {
 }
 
 .booking-panel h2 {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     font-weight: bold;
+    margin-top: 4vh;
+    color: #0b2e6a;
 }
 .booking-button {
     padding: 5px;
-    background: black;
-    color: white;
+    background: #e9f5ff;
+    cursor: pointer;
+    margin-top: 4vh;
+    border: 1px solid #0b2e6a;
+    border-radius: 5px;
+}
+.booking-button:hover {
+    box-shadow: 0px 0px 10px 5px white;
 }
 .carousel-indicators li {
     height: 15px;
@@ -167,8 +177,8 @@ p.intro-para {
 }
 
 .package-panel {
-    margin: 10vh auto;
-    width: 98%;
+    margin: 10vh auto 2vh auto;
+    width: 100%;
 }
 
 .package-panel-division {
@@ -196,6 +206,7 @@ p.intro-para {
 .grid-panel {
     display: flex;
     align-self: center;
+    margin-top: 5vh;
 }
 
 .grid-panel ul li {position: relative;width: 150px;height: 150px;margin: 5px 5px 0px 0px;}
@@ -217,6 +228,7 @@ p.intro-para {
     height: 150px;
     display: flex;
     flex-direction: column;
+    padding: 0px 5px;
     justify-content: center;
 }
 .party-banner {
@@ -229,7 +241,7 @@ p.intro-para {
 }
 footer {
     background: #0a3c97;
-    padding: 5%;
+    padding: 1% 5%;
     color: white;
 }
 
@@ -241,7 +253,7 @@ b.foot-tt {
     font-size: 0.5rem;
     margin-bottom: 10px;
     display: block;
-    text-align: center;
+    text-align: left;
 }
 
 footer ul li {margin-right: 10px;}
@@ -279,6 +291,7 @@ h3.package-panel-st {
 .pkg-pan-btn-contt {
     width: 100%;
     text-align: center;
+    padding-top: 5vh;
 }
 .whole-container {
     background: #e9f5ff;
@@ -289,7 +302,9 @@ h3.package-panel-st {
 }
 
 .booking-panel ul li div p {
-    font-size: 0.5rem;
+    font-size: 0.3rem;
+    color: #0b2e6a;
+    letter-spacing: 0;
 }
 .gallery-panel.gal-mob {
     display: block;
@@ -314,9 +329,7 @@ p.au-sec2-desc {
     line-height: 1rem;
 }
 
-img.au-sec3-carousel-img {
-    height: 200px;
-}
+img.au-sec3-carousel-img {max-width: 100%;}
 
 ul.au-sec4-desc-cont {
     display: flex;
@@ -354,7 +367,7 @@ ul.au-sec4-desc-cont ol {
     /* top: 0; */
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 15px;
     max-width: 100%;
 }
 
@@ -392,30 +405,63 @@ span.review-stars-contt {
     margin-top: 0px;
 }
 .pkg-pan-btn-contt {
-    width: 45%;
+    width: 100%;
     margin: auto;
 }
-p.au-tt {background: #e9f6fe;padding: 10px;font-size: 0.8rem;text-align: center;}
+
 .rating-contt p {
     font-size: 0.5rem;
 }
 .review-contt div p span {font-size: 0.6rem;}
 .cal-date {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    color: #0b2e6a;
 }
 
 .cal-month-year {
     display: flex;
     flex-direction: column;
+    color: #0b2e6a;
 }
 .banner-area img {
     width: 100%;
 }
+.gallery-panel.gal-desk .carousel-item {
+    width: 100%;
+    position: relative;
+    height: 400px;
+}
+div#map p {
+    margin-bottom: 5px;
+}
+img.sec2-carousel-img {
+    height: 220px;
+}
+p.foot-sec-desc a {
+    color: white;
+    cursor: pointer;
+}
+.mb-btTitle {
+    margin: 2vh;
+}
+.other-prop,.googleReview {
+    width: 48%;
+}
+.other-prop img,.googleReview img {
+    max-width: 100%;
+}
 /*MEDIA MEDIA MEDIA MEDIA MOBILE MOBILE RESPONSIVE RESPONSIVE*/
 @media only screen and (min-width: 360px){
     .other-prop-contt {
-        width: 230px;
-        height: 140px;
+        width: 190px;
+        height: 125px;
+    }
+
+    img.sec2-carousel-img {
+        height: 220px;
+    }
+    .other-prop-contt p {
+        margin: 0;
     }
 }
 @media only screen and (min-width:400px){
@@ -428,8 +474,7 @@ p.au-tt {background: #e9f6fe;padding: 10px;font-size: 0.8rem;text-align: center;
     header nav ul li {
         font-size: 0.5rem;
     }
-    .banner-area {
-    }
+
     .search-box-cont input[type="text"] {
         font-size: 0.5rem;
         width: 70px;
@@ -440,7 +485,7 @@ p.au-tt {background: #e9f6fe;padding: 10px;font-size: 0.8rem;text-align: center;
         /* padding: 0px 5px; */
     }
     .booking-panel h2 {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
     .rating-contt p {
         font-size: 0.7rem;
@@ -453,13 +498,16 @@ p.au-tt {background: #e9f6fe;padding: 10px;font-size: 0.8rem;text-align: center;
         width: 240px;
         height: 150px;
     }
-    .dummy-box {width: 70px;height: 70px;}
+    .dummy-box {width: 90px;height: 90px;}
 
     .cal-date {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
 }
 @media only screen and (min-width: 760px){
+.mb-btTitle {
+    margin: 0;
+}
 .gallery-panel.gal-mob {
     display: none;
 }
@@ -475,7 +523,7 @@ p.au-tt {background: #e9f6fe;padding: 10px;font-size: 0.8rem;text-align: center;
     flex-direction: row;
 }
 .pkg-pan-btn-contt {
-    width: 45%;
+    width: 100%;
 }
 header nav ul li {
     font-size: 1rem;
@@ -537,6 +585,7 @@ p.foot-sec-desc {
 
 .booking-button {
     padding: 10px;
+    border: 3px solid #0b2e6a;
 }
 
 p.booking-button-t1 {
@@ -554,7 +603,8 @@ h3.banner-txt2 {
     font-size: 1rem;
 }
 img.sec2-carousel-img {
-    width: 220px;
+    height: auto;
+    max-width: 100%;
 }
 li.foot-social-icon {
     height: 30px;
@@ -568,7 +618,7 @@ h3.package-panel-st {
     margin-bottom: 20px;
     width: 45%;
 }
-p.au-tt {background: #e9f6fe;padding: 20px;font-size: 1.5em;text-align: center;font-weight: 700;letter-spacing: 2px;}
+p.au-tt {background: #b3daf1;padding: 10px 0px;font-size: 1.5em;text-align: center;font-weight: 700;letter-spacing: 2px;}
 
 .mid-contt {
     width: 80%;
@@ -585,7 +635,7 @@ p.au-sec2-desc {
 }
 
 img.au-sec3-carousel-img {
-    height: 200px;
+    max-width: 100%;
 }
 
 ul.au-sec4-desc-cont {
@@ -610,8 +660,8 @@ ul.au-sec4-desc-cont ol {
 
 .other-prop-contt {
     position: relative;
-    width: 250px;
-    height: 200px;
+    width: 200px;
+    height: 155px;
     background: #e9f6fe;
     display: flex;
     flex-direction: column;
@@ -664,7 +714,7 @@ span.review-stars-contt {
     margin-top: 100px;
 }
 .pkg-pan-btn-contt {
-    width: 45%;
+    width: 100%;
     margin: 0;
 }
 
@@ -673,22 +723,28 @@ b.foot-tt {
 }
 
 .booking-panel h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .dummy-box {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
 }
 
 .booking-panel ul li div p {
-    font-size: 1rem;
+    font-size: 0.6rem;
 }
 .cal-date {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 .cal-month-year{
     font-size: 1rem;
+}
+.pkg-pan-btn-contt{
+    padding-top: 50px;
+}
+.grid-panel{
+    margin: 0px;
 }
 }
 
@@ -697,7 +753,6 @@ b.foot-tt {
         padding: 0px 20px;
     }
     img.au-sec3-carousel-img {
-        height: 265px;
     }
 h3.banner-txt1 {
     font-size: 1.5em;
@@ -713,7 +768,7 @@ h3.banner-txt2 {
 }
 
 img.sec2-carousel-img {
-    width: 300px;
+    max-width: 100%;
 }
 
 .party-banner {
@@ -745,8 +800,8 @@ h3.package-panel-st {
     font-size: 1em;
 }
 .other-prop-contt {
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 215px;
 }
 
 p.au-sec2-desc {
@@ -762,15 +817,15 @@ p.au-sec4-list-desc {
     font-size: 1.2em;
 }
 .other-prop-contt p {
-    margin: 20px 0px 0px 0px;
+    /* margin: 20px 0px 0px 0px; */
 }
 .booking-panel h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .dummy-box {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
 
 p.intro-para {
@@ -785,7 +840,7 @@ span.foot-sec-desc {
     font-size: 1rem;
 }
 .cal-date {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .cal-month-year {
@@ -801,7 +856,6 @@ header nav ul li {
     font-size: 1.5em;
 }
 img.au-sec3-carousel-img {
-    height: 330px;
 }
 .banner-text-cont h1 {
     font-size: 3rem;
@@ -816,7 +870,7 @@ h3.banner-txt2 {font-size: 2em;}
 }
 
 img.sec2-carousel-img {
-    width: 370px;
+    max-width: 100%;
 }
 
 h3.sec-tt {
@@ -858,10 +912,9 @@ h3.sec-tt {
 
 @media only screen and (min-width: 1366px){
 img.sec2-carousel-img {
-    width: 400px;
+    max-width: 100%;
 }
 img.au-sec3-carousel-img {
-    height: 355px;
 }
 .banner-text-cont h1 {
     font-size: 4rem;
@@ -898,17 +951,19 @@ p.foot-sec-desc {
 li.foot-social-icon {
     height: 50px;
     width: 50px;
-}   
+} 
+.booking-panel ul li div p {
+    font-size: 1rem;
+}  
 }
 @media only screen and (min-width: 1440px ){
 .party-banner {
     width: 600px;
 }
 img.sec2-carousel-img {
-    width: 420px;
+    max-width: 100%;
 }
 img.au-sec3-carousel-img {
-    height: 375px;
 }
 }
 @media only screen and (min-width: 1600px){
