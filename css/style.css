@@ -448,7 +448,7 @@ p.foot-sec-desc a {
     width: 48%;
 }
 .other-prop img,.googleReview img {
-    max-width: 100%;
+    max-width: 75%;
 }
 /*MEDIA MEDIA MEDIA MEDIA MOBILE MOBILE RESPONSIVE RESPONSIVE*/
 @media only screen and (min-width: 360px){
